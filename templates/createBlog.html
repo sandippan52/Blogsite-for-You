@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+      body{
+        background-color: antiquewhite
+      }
+
+
+
+        form{
+            background-color: aqua;
+            width: 60vw;
+            height: 80vh;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        label{
+            font-size: 20px;
+        }
+        input,textarea{
+            font-size: 30px;
+        }
+
+        .box{
+            margin: 20px;
+                        
+        }
+        .chf{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="/create" method="POST" enctype="multipart/form-data">
+       <!-- <div class="box">
+        <label for="category">Select Category:</label>
+          <select name="category" id="category" required>
+            <option value="Travel">Travel</option>
+            <option value="Food">Food</option>
+            <option value="Festival">Festival</option>
+          </select>
+       </div> -->
+
+        <div class="box">
+       <label for="category"> Select Category</label>
+       <select name="category" id="category">
+        <option value="Travel">Travel</option>
+        <option value="Food">Food</option>
+        <option value="Festival">Festival</option>
+       </select>
+</div>
+
+
+        <div class="box">
+       <label for="title"> Title:</label>
+       <input type="text" id="title" name="title" placeholder="title for your blog" required>
+</div>
+<div class="box">
+       <label for="excerpt">Excerpt:</label>
+       <input type="text" id="excerpt" name="excerpt" placeholder="write the gist in 2-3 lines" required>
+    </div>
+    <div class="box">
+        <label for="content">Content:</label> <br>
+        <textarea name="content" id="content"  placeholder="Write the whole content here.. " required></textarea>
+    </div>
+
+    <div class="box chf">
+        <!-- <label for="">Upload your images</label> <br> -->
+        <input type="file" name="yourImage">
+    </div>
+
+    <br> <br>
+    <button type="submit" class="box">Publish</button>
+    </form>
+</body>
+</html>
+
+
+

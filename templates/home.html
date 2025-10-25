@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        img{
+            display: block;
+            margin: auto;
+            height: 75vh;
+            width: 100vw;
+            
+        }
+        .introPara{
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .section{
+
+            display: flex;
+            justify-content: center;
+
+            
+        }
+
+        .boxSec{
+
+            width: 300px;
+            height: 200px;
+            /* border: 2px solid black; */
+            margin: 5px;
+
+        }
+
+
+        nav{
+            background-color: rgb(241, 235, 235);
+            position: fixed;
+            top: 0px;
+            width: 100vw;
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        li{
+            margin: 20px;
+        }
+        .container{
+
+            width: 50vw;
+            height: 20vh;
+            margin: auto;
+            
+           
+        }
+        .box{
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid blanchedalmond;
+        }
+
+        .bbox1{
+            background-image: url("https://media.istockphoto.com/id/184973514/photo/old-french-village-houses-and-cobblestone-street.jpg?s=612x612&w=0&k=20&c=fUcID1SZKKo06FH9AhMKdvytYdTxvh1UxwiJBuU-fRM=");
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bbox1>button{
+            color: blue;
+            height: 40px;
+            width: 80px;
+        }
+
+        .bbox2{
+            background-image: url("https://foodal.com/wp-content/uploads/2023/05/How-to-Make-a-Full-Course-Italian-Meal-FB.jpg");
+            background-size: cover;
+             display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .bbox2>button{
+            color: blue;
+            height: 40px;
+            width: 80px;
+        }
+
+        .bbox3{
+            background-image: url("https://ngs.org.uk/app/uploads/2023/04/TT-PICNIC-PARTY-featured-image-scaled.jpg");
+            background-size: cover;
+             display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+         .bbox3>button{
+            color: blue;
+            height: 40px;
+            width: 80px;
+        }
+
+        .advertisement{
+            background-color: rgb(241, 235, 235);
+            height: 140px;
+            margin-top: 60px;
+            margin-bottom: 60px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <nav>
+<ul style="list-style: none;">
+    <li>Home</li>
+    <li>About</li>
+    <li id="newPage">Create Blog</li>
+</ul>
+</nav>
+
+<div class="photo"><img src="https://static.vecteezy.com/system/resources/previews/050/785/091/non_2x/turquoise-sea-water-and-boats-on-a-sunny-day-at-a-greek-beach-with-a-cozy-restaurant-photo.jpg" alt=""></div>
+
+<div class="introPara">
+<p>✨ Welcome to our little corner of stories and experiences! This blog celebrates the colors of life through Food, Travel, and Festivals. From savoring mouthwatering dishes to discovering hidden travel gems, and from capturing vibrant celebrations to sharing cultural traditions, we bring you moments worth remembering. Whether you’re a foodie, an explorer, or someone who loves the joy of festivities, there’s always something here to inspire your next adventure.</p>
+</div>
+
+
+
+<div class="section">
+    <div class="boxSec bbox1"> <button id="tra">Travel</button></div>
+    <div class="boxSec bbox2"><button id="fo">Food</button></div>
+    <div class="boxSec bbox3"><button id="fes">Festivals</button></div>
+</div>
+
+
+<div class="advertisement">
+<h1>Hey we promote eating biriyani daily !!!!</h1>
+</div>
+
+
+
+
+
+
+
+<script>
+const NewP = document.getElementById('newPage');
+
+NewP.addEventListener('click', function(){
+    window.location.href = "/create";
+});
+
+document.getElementById('tra').addEventListener('click', function(){
+    window.location.href = "/travel"
+});
+
+document.getElementById('fo').addEventListener('click',function(){
+    window.location.href = "/food"
+});
+
+document.getElementById('fes').addEventListener('click',function(){
+    window.location.href = "/festival"
+})
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .containerBox{
+          margin: 20px;
+          /* border: 1px solid black; */
+        }
+        h1{
+            margin-bottom: 60px;
+        }
+        p{
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        .photo{
+            display: flex;
+            justify-content: center;    
+        }
+        img{
+            width: 50vw;
+            height: 60vh;
+        }
+    </style>
+</head>
+<body>
+    <div><h1>Food</h1></div>
+    <div><p>Read all the latest food vlog with us 🥳🥳</p></div>
+
+
+     <% foodBlog.forEach(blog => { %>
+    <div class="containerBox">
+        <div class="photo"><img src="/<%= blog.Image %>" alt="Post Image" ></div>
+        <div class="firstC"><h1><%= blog.Title %></h1></div>
+        <div class="secondC"><P><%= blog.Excerpt %></P></div>
+        <div><a href="/single/<%= blog._id %>">Read more</a></div>
+
+    </div>
+ <% }) %>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
